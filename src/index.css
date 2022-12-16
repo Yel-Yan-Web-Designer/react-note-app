@@ -1,0 +1,91 @@
+/* ?-----------------------------------------? */
+/* ? CUSTOM PROPERTIES ? */
+/* ?-----------------------------------------? */
+:root{
+  /* !---COLORS---! */
+  --primary : 217 86% 56%;
+  --white : 100 100% 100%;
+  --black : 0 0% 0%;
+  --gray : 217 14% 55%;
+
+  /* !---FONTS---! */
+  --fs-xsm : 0.65rem;
+  --fs-sm : 0.85rem;
+  --fs-normal : 1rem;
+  --fs-lg : 1.5rem;
+  --fs-xlg : 2rem;
+  --fs-2xlg : 2.5rem;
+
+  --fw-light : 200;
+  --fw-normal : 400;
+  --fw-bold : 700;
+  --fw-bolder : 850;
+
+  --br : 5px;
+  --br-circle : 50%;
+
+  --bs :  4px 6px 10px -2px rgba(0,0,0,0.7);
+}
+/* ?-----------------------------------------? */
+/* ? GLOBAL STYLES ? */
+/* ?-----------------------------------------? */
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+  line-height: 1.45;
+  background-color: hsl(var(--white));
+  color: hsl(var(--black));
+
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+button{
+  display: inline-block;
+  outline: none;
+  border: none;
+
+  color: hsl(var(--white));
+  background-color: hsl(var(--primary));
+  border-radius: var(--br);
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+  transform: scale(1);
+}
+button:hover{
+  background-color: hsl(217, 86%, 42%);
+  transform: scale(1.05);
+}
+h1,h2,h3,h4,p{
+  margin: 0;
+}
+p{
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-normal);
+}
+/* ?-----------------------------------------? */
+/* ? REUSABLE CLASSES ? */
+/* ?-----------------------------------------? */
+.px-1{
+  padding-inline: 1rem;
+}

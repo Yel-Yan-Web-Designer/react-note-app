@@ -1,0 +1,33 @@
+/*-----TODO LIST-----*/
+- Create new notes (depends on statarray lengths)
+- Find current selected id and return first array element
+- Update new notes by using onChange
+
+/*-----NEW FEATURES ADD-----*/
+- Save in local storage (useEffect) lazy state
+- Change summary title  (split && "\n")
+- Bump recent note to the top (unshift)
+- Delete Notes
+
+/*-----DEPENDENCIES-----*/
+- npm i react-mde
+- npm i react-split
+- npm i nanoid
+- npm i react-showdown
+
+/*-----COMPONENTS-----*/
+- App  (nanoid, split)
+- Sidebar 
+- Editor (react mde, showdown)
+
+/*-----STATES-----*/
+- notes for first initilaize []
+- getcurrentselected note id currentnotesid
+
+/*-----COLORS-----*/
+- hsl(217, 86%, 56%) (primary)
+- hsl(0, 0%, 0%) (black)
+- hsl(100, 100%, 100%) (white)
+- hsl(217, 14%, 55%) (gray)
+
+
